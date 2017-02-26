@@ -1,0 +1,100 @@
+.top-header {
+  background-color: Red;
+  padding-top: 1px;
+  padding-bottom:1px;
+}
+.top-image{
+  text-align: center;
+}
+#businessList{
+  display: list-item;
+  list-style-type: circle;
+  padding: 5px;
+  position: relative;
+  bottom: 5px;
+  list-style-position: outside;
+  text-align: justify;
+}
+#businessListHeader{
+  text-align: left;
+  position: relative;
+  left: 13px;
+}
+.menu{
+}
+.menu ul{
+  text-align: center;
+}
+.menu li{
+  display: inline-block;}
+  .menu li a, .menu li span
+	{
+		display: inline-block;
+		margin-left: 0.50em;
+		padding: 1em 1.5em;
+		letter-spacing: 0.20em;
+		text-decoration: none;
+		font-size: 1.4em;
+		font-weight: 600;
+		text-transform: uppercase;
+		outline: 0;
+		color: #3C3C3C;
+	}
+
+.menu{
+}
+.apiImage{
+  text-align: center;
+}
+.yelpHeader{
+  margin: 0 auto;
+  }
+.apiKeyHeader{
+  text-align: center;
+}
+.apiKeySteps{
+  font-size: 1.2em;
+  text-align: center;
+}
+
+
+#apiKeyImage{
+  width: auto;
+  height: auto;
+  max-width: 700px;
+  max-height: 700px;
+  position: relative;
+  top: 0px;
+
+}
+.yelpIntro{
+  margin: 0 auto;
+  width: 50em;
+  font-size: 1.2em;
+  text-align: center;
+}
+.footer{
+  background-color: Gray;
+  text-align: center;
+  padding: 5em;
+  position: relative;
+  top: 100px;
+}
+.continueButton{
+  padding: 15px 25px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: Red;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  position: relative;
+  top: 25px;
+}
+
+
+
+
