@@ -34,7 +34,8 @@
 		padding: 1em 1.5em;
 		letter-spacing: 0.20em;
 		text-decoration: none;
-		font-size: 1.4em;
+		/*font-size: 1.4em;*/
+		font-size: 1em;
 		font-weight: 600;
 		text-transform: uppercase;
 		outline: 0;
@@ -53,7 +54,11 @@
   text-align: center;
 }
 .apiKeySteps{
-  font-size: 1.2em;
+  /*font-size: 1.2em;*/
+  font-size: 1em;
+  text-align: justify;
+}
+#apiKeySteps2{
   text-align: center;
 }
 
@@ -92,6 +97,9 @@
   box-shadow: 0 9px #999;
   position: relative;
   top: 25px;
+}
+#centerAll{
+  text-align: center;
 }
 
 

@@ -5,10 +5,8 @@
 </head>
 <body>
 <!--Top Header-->
-<!--nav class="navbar navbar-inverse"-->
-<div class="top-header">	<!--"container-fluid"-->
+<div class="top-header">	
     <div class="collapse navbar-collapse" id="myNavbar">
-     <!-- <ul class="nav navbar-nav">-->
   </div>   
   </nav>
   <div class="top-header">
@@ -33,23 +31,56 @@
 <div class="middleNavigation">
 	<div class="yelpIntro"><p>
 	<div class="apiKeyHeader">
-	<h1>A Guide to Using API with JavaScript, JSON, and HTML </h1> 
+	<h1>A Guide to Using API with JavaScript and HTML </h1> 
 	</div>
-	<p>You will need the following to setup the environment for using API:
-	<br><b><em>Node.js, npm install express, and npm install express-handlebars.</b></em></p>
 	<div class="apiKeySteps">
-	<strong><font color="maroon">Below are some script samples of working with JSON and JS to use API.</font></strong><br>
+	<div id=apiKeySteps2>
+	<strong><font color="maroon">Below are some script samples of working with JS and HTML to use Yelp API.</font></strong><br>
 	<p>•••••</p>
-	<b>Create a package.json (like the file below) file to install express with handlebars.</b>
-	<iframe width="100%" height="300" src="//jsfiddle.net/vrw754b4/embedded/js/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-	<b>Create a JavaScript file for the AJAX Interaction. It will look like this:</b>
-	<iframe width="100%" height="300" src="//jsfiddle.net/oftgnc24/embedded/js/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-	<b>Using Get Request with Forms Handling</b>
-	<iframe width="100%" height="300" src="//jsfiddle.net/muadnn5k/embedded/js/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-	<b>For the Get Request to work, you will need Handlebars (requestData.handlebars).</b>
-	<iframe width="100%" height="300" src="//jsfiddle.net/wxvpagd9/embedded/html/?fontColor=Black" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-	<b>A <em>"main.handlebars"</em> is also needed for everything to run properly.</b>
-	<iframe width="100%" height="300" src="//jsfiddle.net/s994x6au/embedded/html/?fontColor=Black" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+	
+	<b>Making Asynchronous Call with JavaScript and XML</b></div>
+	<iframe width="100%" height="300" src="//jsfiddle.net/heheh124/jhwz49w7/embedded/js/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+	<p>What are the important things happening here? <br><br>
+	First, the API Keys are assigned to variables.  This makes it easier to combine the keys along with the input and Yelp url.
+	<br><br>
+	<b><em>XMLHttpRequest</b></em> is what makes the HTTP request and returns the data received from the request made. <br><br>
+	In the lines such as <em><b>var find = document.getElementById("termInput").value</b></em>, the <em>termInput</em> is the search parameter input
+	entered by the user and it is assigned to the variable <em>find</em>.
+	<br><br>
+	We then use <em>if/else if</em> to assign the search parameter input to the <em>formInput</em>. The<em><b> formInput</b></em> will be
+	included later in the url. <br><br>
+	<b><em>req.open("GET", website, true)</em></b> is a GET request for the url <em>https://api.yelp.com/v2/search/?</em> which
+	includes the <em>formInput</em> and the API Keys. Remember that the Yelp url, formInput, and apiKey were combined together within the <em>website</em> variable.
+	<br><br>
+	<b><em> req.addEventListener('load', function()</b></em> is added to make this call an <b>asynchronous call</b>.  An asychronous call
+	is done via call back functions which 'calls you back' or notifies you after the request finishes. Below it is an <em>if/else</em>
+	statement that let you know what is happening. If the request status is >= 200 and less than or equal to 400, then it means that 
+	the request went through and the response will be passed to the <em>id</em> such as the id <em>find</em> in this line
+	<em><b>document.getElementById('find')</em></b>. If the request status is not between or equal to 200 to 400, an error will be logged.
+	In addition, the line <b><em>req.open("GET", website, true)</b></em> needs to have <b><em>true</b></em> which indicates that it is an asynchronous call.
+	At the end, <b><em>req.send()</b></em> is called to send the request and <b><em>event.preventDefault()</b></em> is placed to 
+	prevent default action of an element from being triggered.
+	</p>
+	<p>
+	<strong>GET vs POST</strong><br><br>
+	GET and POST have been mentioned repeatedly but what do they actually do?  Well, GET and POST are similar in that they are both used
+	to make requests but they differ in how they do it.  In <b>GET</b> requests, the data sent with the request is part of the URL that is sent.
+	In <b>POST</b> requests, the data is included in the body of the request. <br><br>
+	GET and POST requests are differentiated through: <br><br>
+	<em>req.open("GET",url, true/false);</em> = this is a GET request<br>
+	<em>req.open("POST",url, true/false);</em> = this is a POST request<br>
+	</p>
+	
+	
+	<div id=apiKeySteps2>
+	<b>HTML</b></div>
+	<iframe width="100%" height="300" src="//jsfiddle.net/heheh124/c1jr3y8f/1/embedded/html/?fontColor=Black" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+	<br><br>
+	This HTML is needed to be used simultaneously with the JavaScript above where the JS will be added as a script. This HTML is what will
+	enable you to type in some input such as the search parameters and it will also display the result. The important part here is that
+	the <em>id</em> tags must be correct in order for it to function properly.
+	
+	
 	</div>
 	</div>
 	<div class="yelpIntro"><p>

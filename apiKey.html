@@ -5,10 +5,8 @@
 </head>
 <body>
 <!--Top Header-->
-<!--nav class="navbar navbar-inverse"-->
-<div class="top-header">	<!--"container-fluid"-->
+<div class="top-header">	
     <div class="collapse navbar-collapse" id="myNavbar">
-     <!-- <ul class="nav navbar-nav">-->
   </div>   
   </nav>
   <div class="top-header">
@@ -31,11 +29,17 @@
 
 <!--Middle Section-->
 <div class="middleNavigation">
+	<div class="yelpIntro">
 	<div class="apiKeyHeader">
 	<h1>Getting the API Key</h1> 
 	</div>
 	<div class="apiKeySteps">
-	<p>The first step to Yelp API is getting the API Key.  Follow these instructions on how to get the API Key:</p>
+	<p>The first step to Yelp API is getting the API Key. But what is an API Key? API Key is normally given
+	after you have created an account with the service provider. It is a unique value that must be included along with the
+	GET or POST request (more about this in "Using API"). This key allows the service provider to identify who is sending the request so that they can 
+	keep track of how many requests you are sending.</p>
+	<div id="centerAll">
+	<p>Follow these instructions on how to get the API Key:</p>
 	<b><font color="maroon">Step 1:</font> Create a Yelp account.</b>
 	<a href="https://www.yelp.com/login?return_url=%2Fdevelopers%2Fmanage_api_keys">Sign up for an account here.</a>
 	<br> <br>
@@ -43,7 +47,11 @@
 	<p> After answering basic questions, they key will be provided like below: </p> 
 	<img id="apiKeyImage" src="https://i.stack.imgur.com/lZpEr.png">
 	</div>
-	
+	<p>API requests will need the following: <b>Consumer Key, Consumer Secret, Token, and Token Secret</b>.
+	Please visit <a href="https://www.yelp.com/developers/documentation/v2/authentication"> Yelp authentication</a> page for more information
+	on what keys are needed. In the next section, we will show you how the API Keys can be combined with the url to make the API request. </p>
+	</div>
+	</div>
 	<div class="yelpIntro"><p>
         <a class="continueButton" href="IntroAPI.html" role="button">Back</a>
 		<a class="continueButton" href="usingAPI.html" role="button">Continue &raquo;</a>

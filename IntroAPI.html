@@ -5,10 +5,8 @@
 </head>
 <body>
 <!--Top Header-->
-<!--nav class="navbar navbar-inverse"-->
-  <div class="top-header">	<!--"container-fluid"-->
+  <div class="top-header">	
     <div class="collapse navbar-collapse" id="myNavbar">
-     <!-- <ul class="nav navbar-nav">-->
   </div>   
   </nav>
   <div class="top-header">
@@ -33,21 +31,23 @@
 	<div class="apiImage">
 		<img src="http://www.happiestminds.com/wp-content/themes/hmtheme/images/api-services.png">	
 	<div class="yelpHeader">
-	<h1>What is an API?</h1> 
+	<h1>What is an API?</h1>
+	<div class="yelpIntro"><b>Application Programming Interface</b></div>
 	<div class="yelpIntro"><p>
 	According to Microsoft, Web APO "is a framework that makes it easy to build HTTP services that reach a broad range of clients,
 	including browsers and mobile devices."  What exactly does that mean?  Think of cloud computing.  Cloud computing is a network of 
 	remote servers hosted on the internet to store, manage, and process data.  Web API is similar to this.  In Web API, anyone with
 	some experience in JavaScript can 'expose' their data through Web API to other people via browsers and other devices
-	such as mobile apps and tablets.  It is an open source for providing data to other people.  It is like an online library, such as
-	Wikipedia, where people can contribute data and other can access that data.
+	such as mobile apps and tablets, for others to access this data.  It is an open source for providing data to other people.  
+	It is like an online library, such as Wikipedia, where people can contribute data and others can access that data.
 	</p>
 	<h2>What does Yelp API do?</h2>
 	<p>
-	Now that you know the gist of an API, you probably have already guessed what Yelp API does.  
-	Yelp API allows you to see search results and information of various businesses in different countries.
-	With the search results on hand, you can sort the result by best match, by highest ratings, or by distance.  This
-	gives you helpful information that you can use to grow your own business or increase sales.
+	Now that you know a little about Web API, let's look at what Yelp API does.  Yelp API allows you to pass search parameters
+	such as "find term", "category", "near location", and other more search words.  The response from that search includes 
+	useful business information such as business name, phone, address, and Yelp rating.  It will include a list of businesses
+	that best match the criteria of the search parameters.  With the search results on hand, this will give you helpful
+	information on other businesses that you can use for consumption or business-related purposes.
 	</p>
 	<p><div id="businessListHeader">
 	<b id="businessListHeader">Here are some of the things you can do with Yelp API:</b>
@@ -58,7 +58,8 @@
 	  <li id="businessList">Search for businesses by services offered such as delivery or pickup.</li>
 	  <li id="businessList">Find business information such as photos, rating, price levels, and hours of operation.</li>
 	</ul>
-	<p>In this Yelp API guide, we will show an example of finding a business by finding business name,
+	<p>
+	In this Yelp API guide, we will show an example of finding a local business by using a find 'term',
 	nearby location, and category.</p>
 	</div>
 	
